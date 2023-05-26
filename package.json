@@ -1,0 +1,34 @@
+{
+  "name": "template-electronforge-vite-vue",
+  "productName": "template-electronforge-vite-vue",
+  "version": "1.0.0",
+  "description": "Electronforge+vite+vue template",
+  "main": ".vite/build/main.js",
+  "scripts": {
+    "start": "electron-forge start",
+    "package": "electron-forge package",
+    "make": "electron-forge make",
+    "publish": "electron-forge publish",
+    "lint": "echo \"No linting configured\""
+  },
+  "keywords": [],
+  "author": {
+    "name": "LiangJian",
+    "email": "leung_gin@126.com"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@electron-forge/cli": "^6.1.1",
+    "@electron-forge/maker-deb": "^6.1.1",
+    "@electron-forge/maker-rpm": "^6.1.1",
+    "@electron-forge/maker-squirrel": "^6.1.1",
+    "@electron-forge/maker-zip": "^6.1.1",
+    "@electron-forge/plugin-vite": "^6.1.1",
+    "@vitejs/plugin-vue": "^4.2.3",
+    "electron": "24.3.1"
+  },
+  "dependencies": {
+    "electron-squirrel-startup": "^1.0.0",
+    "vue": "^3.3.4"
+  }
+}
