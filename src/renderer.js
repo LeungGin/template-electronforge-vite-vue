@@ -26,11 +26,18 @@
  * ```
  */
 
-import { createApp } from 'vue'
-import App from './App.vue'
+import { startup as vueStartup } from './vue.main'
 
-// vue index样式
 import './style.css'
 
 console.log('👋 This message is being logged by "renderer.js", included via Vite')
-createApp(App).mount('#app')
+
+// IPC demo
+const ipcPing = async () => {
+  const response = await window.versions.ping()
+  console.log('👋 This is Electron IPC result: ' + response)
+}
+ipcPing()
+
+// vue startup
+vueStartup()
