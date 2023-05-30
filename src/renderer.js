@@ -28,7 +28,7 @@
 
 import { startup as vueStartup } from './vue.main'
 
-import './style.css'
+import './style/style.main.css'
 
 console.log('👋 This message is being logged by "renderer.js", included via Vite')
 
